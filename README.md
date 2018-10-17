@@ -1,4 +1,4 @@
-# iti-graphql-node
+# eur-graphql-node
 
 Project made to test GraphQL with Node.
 
