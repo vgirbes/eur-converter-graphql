@@ -1,0 +1,20 @@
+{
+  "name": "graphql-iti",
+  "version": "1.0.0",
+  "description": "Test Graphql",
+  "main": "app.js",
+  "dependencies": {
+    "cypress": "^3.1.0",
+    "express": "^4.16.4",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
+    "node-fetch": "^2.2.0",
+    "xvfb": "^0.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Vicent Girbés",
+  "license": "ISC"
+}
