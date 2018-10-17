@@ -8,8 +8,8 @@ const PORT = 8081;
 // GraphQL schema
 const schema = buildSchema(`
   type Query {
-        yahoo(amount: Float!, to: String!): Conversion
-        fixer(amount: Float!, to: String!): Conversion
+      yahoo(amount: Float!, to: String!): Conversion
+      fixer(amount: Float!, to: String!): Conversion
     },
     type Conversion {
       converted: Float
@@ -61,15 +61,15 @@ const getFixerConversion = (args) => {
 
 // Root resolver
 const root = {
-    yahoo: getYahooConversion,
-    fixer: getFixerConversion
+  yahoo: getYahooConversion,
+  fixer: getFixerConversion
 };
 
 // Create an express server and a GraphQL endpoint
 const app = express();
 app.use('/graphql', Graphql({
-    schema: schema,
-    rootValue: root,
-    graphiql: true
+  schema: schema,
+  rootValue: root,
+  graphiql: true
 }));
 app.listen(PORT, () => console.log(`Express GraphQL Server Now Running On localhost:${PORT}/graphql`));
