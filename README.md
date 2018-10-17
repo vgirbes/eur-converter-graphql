@@ -14,8 +14,9 @@ This project converts EURs to any other currency through the Yahoo and Fixer API
 $ docker-compose up -d
 ```
 
-Go to http://localhost:8081 and feel free to test the online EUR currency converter.
+Go to http://localhost:8081/graphql and feel free to test the online EUR currency converter.
 
+Expected query:
 ```graphql
 {
   yahoo(amount: 10.20, to: "USD") {
